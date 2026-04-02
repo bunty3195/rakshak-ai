@@ -1,7 +1,26 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Virtual environments
+venv/
+venv_new/
+venv_gpu/
+venv_final/
+.venv/
+env/
+.env
+
+# AI/ML Specifics
+runs/
+*.pt
+!models/best.pt
+!models/yolo26n.pt
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS Files
+.DS_Store
+Thumbs.db
 
 # C extensions
 *.so

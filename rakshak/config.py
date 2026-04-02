@@ -7,8 +7,8 @@ ANIMAL_CLASSES = ["dog"]
 COOLDOWN_FRAMES = 30  # Number of frames to wait before re-alerting the same type
 
 # Detection Thresholds
-POTHOLE_CONF_THRESHOLD = 0.4  # Lowered for better sensitivity
-OVERLAP_THRESHOLD = 0.1       # Slightly more permissive overlap
-MIN_POTHOLE_AREA = 200        # Lowered to detect smaller potholes
-MAX_ASPECT_RATIO = 4.0        # Increased for better coverage
-BRIGHTNESS_THRESHOLD = 200    # Increased to allow more diverse lighting
+POTHOLE_CONF_THRESHOLD = 0.15  # Extremely low for maximum capture
+OVERLAP_THRESHOLD = 0.3       # More permissive overlap with other objects
+MIN_POTHOLE_AREA = 10         # Minimal area to catch even the smallest distant holes
+MAX_ASPECT_RATIO = 12.0       # Very high to catch long cracks/flat perspectives
+BRIGHTNESS_THRESHOLD = 255    # Completely disabled to catch reflective/wet potholes

@@ -59,6 +59,21 @@ npm install
 npm run dev
 ```
 
+### 3. Fine-Tuning the Model
+You can improve the pothole detection accuracy using your own dataset.
+1.  Prepare your dataset in YOLOv8 format (e.g., from Roboflow).
+2.  Update the `data` path in `train.py`.
+3.  Run the training script:
+```bash
+python train.py
+```
+*Note: The script is optimized to use GPU (RTX 5060) if available.*
+
+### 4. Cloud Hosting
+A `Dockerfile` is included for easy deployment.
+- **Backend**: Recommended to host on **Hugging Face Spaces (Docker SDK)** for free 16GB RAM.
+- **Frontend**: Host on **Netlify** or **Vercel**.
+
 ## 🛠 Configuration
 Adjust detection sensitivity in `rakshak/config.py`:
 - `POTHOLE_CONF_THRESHOLD`: Sensitivity for potholes (default 0.4).
